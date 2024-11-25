@@ -1,0 +1,29 @@
+<div class="container">
+    <h4>Editar Produto - Disney Store</h4>
+
+    <form action="/atualizar" method="POST">
+        <input type="hidden" name="id" value="{{produto.id}}">
+        
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome:</label>
+            <input type="text" name="nome" class="form-control" value="{{produto.data.nome}}">
+        </div>
+        
+        <div class="mb-3">
+            <label for="preco" class="form-label">Preço:</label>
+            <input type="number" name="preco" class="form-control" value="{{produto.data.preco}}">
+        </div>
+
+        <div class="mb-3">
+            <label for="categoria" class="form-label">Categoria:</label>
+            <input type="text" name="categoria" class="form-control" value="{{produto.data.categoria}}">
+        </div>
+
+        <div class="mb-3">
+            <label for="descricao" class="form-label">Descrição:</label>
+            <textarea name="descricao" class="form-control" rows="3">{{produto.data.descricao}}</textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Atualizar Produto</button>
+    </form>
+</div>

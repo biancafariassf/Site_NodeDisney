@@ -1,0 +1,24 @@
+<div class="container">
+    <br>
+    <h4>Consultar Produtos - Disney Store</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {{#each produtos}}
+        <div class="col">
+            <div class="card shadow-sm border-light rounded">
+                <img src="{{this.data.imagemPath}}" class="card-img-top" alt="{{this.data.nome}}"
+                    style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.data.nome}}</h5>
+                    <p class="card-text">Preço: R$ {{this.data.preco}}</p>
+                    <p class="card-text">{{this.data.descricao}}</p>
+                    <p class="card-text"><strong>Categoria:</strong> {{this.data.categoria}}</p>
+                    <div class="d-flex justify-content-between">
+                        <a href="/editar/{{this.id}}" class="btn btn-warning btn-sm">Editar</a>
+                        <a href="/excluir/{{this.id}}" class="btn btn-danger btn-sm">Excluir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

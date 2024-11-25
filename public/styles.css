@@ -1,0 +1,188 @@
+/* Estilos para a Disney Store */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #6a1b9a;
+    color: white; /* Cor de texto geral */
+}
+
+/* Navbar personalizada com cor roxa */
+.navbar-purple {
+    background-color: #c199da !important; /* Um tom de roxo */
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.navbar .navbar-brand {
+    color: #6a1b9a !important; /* Cor amarela para o logo */
+}
+
+.navbar-toggler-icon {
+    background-color: white; /* Cor do ícone do menu */
+}
+
+.container {
+    padding-top: 20px;
+}
+
+/* Cards */
+.card {
+    background-color: #ffffff;
+    border: 2px solid #f0ad4e; /* Cor amarela que lembra o dourado Disney */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6a1b9a; /* Azul Disney */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0;
+}
+
+.btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.btn-warning {
+    background-color: #f0ad4e;
+    border-color: #ec971f;
+}
+
+.btn-warning:hover {
+    background-color: #ec971f;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    border-color: #c9302c;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+}
+
+/* Adicionando efeitos de hover para os cards */
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo para os botões ativos na navbar */
+.nav-link.active {
+    font-weight: bold;
+}
+
+/* Estilo para o formulário */
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #6a1b9a; /* Cor roxa para o campo de input quando em foco */
+    box-shadow: 0 0 0 0.2rem rgba(106, 27, 154, 0.25); /* Sombra roxa para input em foco */
+}
+
+/* Aplica o fundo lilás apenas nas caixas de input e textarea */
+.input-lilas {
+    background-color: #d1c4e9; /* Cor lilás para as caixas de input */
+    color: white; /* Cor do texto dentro do campo de input */
+    border: 1px solid #ced4da; /* Borda clara */
+}
+
+.input-lilas:focus {
+    background-color: #b39ddb; /* Um tom de lilás mais escuro no foco */
+    border-color: #6a1b9a; /* Cor roxa no foco */
+    box-shadow: 0 0 0 0.2rem rgba(106, 27, 154, 0.25); /* Sombra roxa para input em foco */
+}
+
+.btn-primary {
+    background-color: #6a1b9a; /* Azul Disney para o botão */
+    border-color: #6a1b9a;
+}
+
+.btn-primary:hover {
+    background-color: #6a1b9a; /* Azul mais escuro no hover */
+}
+
+/* Adicionando uma classe para o título da página */
+h4 {
+    font-weight: bold;
+    color: #ffffff; /* Cor branca para o título */
+}
+
+/* Título personalizado na página */
+h4.titulo-cadastro {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Personalizando o botão de submit do formulário */
+button[type="submit"] {
+    background-color: #ffcc00; /* Cor amarela para o botão */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #f0ad4e; /* Amarelo mais intenso no hover */
+}
+
+/* Personalizando o logo na navbar */
+.logo-nav {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Navbar com cor roxa suave */
+.navbar {
+    background-color: #6a1b9a; /* Cor roxa suave */
+}
+
+/* Estilos para a logo */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Garantir que os campos de formulário também apareçam com o texto branco */
+label, p, input, button, textarea {
+    color: white;
+}
+
+/* Melhorando a visibilidade dos campos de input */
+input, textarea {
+    background-color: #495057;
+    border: 1px solid #6c757d;
+    color: white;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.5);
+}
+
